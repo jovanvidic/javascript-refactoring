@@ -1,0 +1,14 @@
+{
+  "name": "javascript-refactoring",
+  "author": "Jovan Vidic <jovan.vidic@codecentric.de>",
+  "dependencies": {
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "underscore": "*"
+  },
+  "devDependencies": {
+    "vows": "0.5.x"
+  },
+  "engine": "node >= 0.4.1"
+}

@@ -1,0 +1,76 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
+<body>
+	<ul class="nav nav-pills">
+  		<li class="active"><a href="../../v1/client/index.html">V1</a></li>
+  		<li><a href="../../v2/client/index.html">V2</a></li>
+  		<li><a href="../../v3/client/index.html">V3</a></li>
+  		<li><a href="../../v4/client/index.html">V4</a></li>
+  		<li><a href="../../v5/client/index.html">V5</a></li>
+	</ul>
+	<div class="page-header">
+  		<h1>Coding Serbia <small> Refactoring JavaScript Applications - V1</small></h1>
+	</div>
+	<!-- Button trigger modal -->
+	<button class="btn btn-primary btn-lg" data-toggle="modal" onclick="createSpeaker()">
+		Add Speaker
+	</button>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Add Speaker</h4>
+				</div>
+				<div class="modal-body">
+					<input type="hidden" id="speakerId" />
+					<div class="narrow-form">
+						<div class="form-group">
+							<label for="firstName">First name</label>
+  							<input type="text" class="form-control" id="firstName" required />
+  						</div>
+					</div>
+					<div class="narrow-form">
+						<div class="form-group">
+							<label for="lastNameName">Last name</label>
+							<input type="text" class="form-control" id="lastName" required />
+						</div>
+					</div>
+					<div class="narrow-form">
+						<div class="form-group">
+							<label for="lastNameName">Topic</label>
+							<textarea class="form-control" rows="3" id="topic"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button id="btnSaveSpeaker" type="button" class="btn btn-primary" onclick="add()">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<table class="table table-striped">
+		<thead>
+			<th>Session time</th>
+			<th>Track</th>
+			<th>Topic</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th></th>
+		</thead>
+		<tbody></tbody>
+	</table>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/speakers.js"></script>
+
+	<script type="text/javascript">
+		load();
+	</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jasmine Spec Runner</title>
+  <link rel="stylesheet" href="../lib/jasmine/lib/jasmine-core/jasmine.css">
+</head>
+<body>
+  <div id="sandbox" style="overflow:hidden; height:1px;"></div>
+  <script src="../lib/jasmine/lib/jasmine-core/jasmine.js"></script>
+  <script src="../lib/jasmine/lib/jasmine-core/jasmine-html.js"></script>
+  <script type="text/javascript" src="../lib/jasmine/lib/jasmine-core/boot.js"></script>
+  <script src="../lib/requirejs/require.js"></script>
+  <script type="text/javascript">
+  requirejs.config({
+    baseUrl: "../scripts/",
+    paths: {
+        "jquery": "../lib/jquery/dist/jquery.min"
+    }
+});
+  </script>
+
+  <script src="spec/model.spec.js"></script>
+</body>
+</html>
